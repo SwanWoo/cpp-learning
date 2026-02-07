@@ -1,0 +1,25 @@
+# 构建产物
+build/
+bin/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 编译产物
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+
+# macOS
+.DS_Store
+
+# 调试文件
+*.dSYM/
