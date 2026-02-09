@@ -1,7 +1,12 @@
-#include <iostream>
+#include "main.h"
+
+void HELLO::say_hello() {
+    cout << "Hello C++ with CMake!" << endl;
+}
 
 int main() {
-    std::cout << "Hello C++ with CMake!" << std::endl;
+    HELLO hello;
+    hello.say_hello();
     return 0;
 }
 

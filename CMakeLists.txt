@@ -18,6 +18,10 @@ foreach(cpp_file ${CPP_FILES})
     string(REPLACE "/" "_" target_name ${target_path})
 
     add_executable(${target_name} ${cpp_file})
+    
+    target_include_directories(${target_name} PRIVATE 
+        ${PROJECT_SOURCE_DIR}/include
+    )
 
     # 获取目录路径（保持 src 目录结构）
     get_filename_component(dir_path ${target_path} DIRECTORY)
